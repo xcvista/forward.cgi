@@ -9,7 +9,7 @@ install:
   - pushd ~
   - wget "https://github.com/json-c/json-c/archive/json-c-0.12-20140410.tar.gz" -O - | tar xz
   - cd json-*
-  - ./configure --prefix=/usr
+  - CC=clang ./configure --prefix=/usr
   - make
   - sudo make install
   - popd
