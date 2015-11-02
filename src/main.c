@@ -25,11 +25,15 @@ void cgi_crash(int value)
            "Content-Type: text/html\n"
            "\n"
            "<DOCTYPE html>\n"
-           "<html><head>\n"
+           "<html>\n"
+           "<head>\n"
+           "<meta charset=\"utf-8\" />\n"
            "<title>Redirector Error: %1$d</title>\n"
-           "</head><body>\n"
+           "</head>\n"
+           "<body>\n"
            "<h1>Error %1$d</h1>\n"
-           "</body></html>\n", value);
+           "</body>\n"
+           "</html>\n", value);
     exit(0);
 }
 
